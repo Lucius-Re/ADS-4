@@ -233,7 +233,7 @@ DFS is preferred when:
 
 * **Graph Structure Output**
   <img width="276" height="344" alt="image" src="https://github.com/user-attachments/assets/b03141d4-6a86-4fba-8f63-359bf454cc2b" />
-
+  
 * **BFS Traversal Output**
 * GRAPH SIZE: 10
   <img width="236" height="94" alt="image" src="https://github.com/user-attachments/assets/18d8e005-0acb-43df-9cfb-ce4be212f7ba" />
@@ -243,14 +243,16 @@ DFS is preferred when:
   <img width="1014" height="91" alt="image" src="https://github.com/user-attachments/assets/6fcd094e-d4ed-49fd-9d6f-69e78f1148f3" />
 
 * **DFS Traversal Output**
-* **Performance Results**
+* GRAPH SIZE: 10
+    <img width="225" height="90" alt="image" src="https://github.com/user-attachments/assets/c39f4e2b-bc28-40d6-a32c-8ac4fb56bc22" />
+* GRAPH SIZE: 30
+    <img width="822" height="92" alt="image" src="https://github.com/user-attachments/assets/626a8853-678f-41b8-a12f-b404bc2f8667" />
+* GRAPH SIZE: 100
+    <img width="1014" height="84" alt="image" src="https://github.com/user-attachments/assets/ceb6e5ab-158a-4d4f-8778-ab4140c9fe18" />
 
 ---
 
 ## Reflection
+In this assignment, I implemented a graph system using adjacency lists and compared BFS and DFS traversal algorithms. By measuring execution time with System.nanoTime(), I observed how performance scales with graph size and noted the JVM warm-up effect, where the first test run (size 10) took longer due to initial code optimization.
 
-In this assignment, I learned how graphs are represented using adjacency lists and how traversal algorithms work in practice. I implemented both BFS and DFS and measured their performance on graphs of different sizes.
-
-The main difference between BFS and DFS is the traversal strategy: BFS explores vertices level by level using a queue, while DFS explores deeply using recursion. BFS is useful for finding shortest paths in unweighted graphs, while DFS is more suitable for cycle detection and topological sorting.
-
-One challenge was understanding how visited vertices are tracked to prevent infinite loops. Overall, this assignment helped me better understand graph theory and algorithmic complexity.
+The project highlighted the practical differences between the two algorithms: BFS is ideal for finding the shortest paths level-by-level using a queue, while DFS is better suited for deep exploration and cycle detection using recursion. The main challenge was correctly managing the visited state of vertices to avoid infinite loops. Overall, this task improved my understanding of algorithmic complexity and graph representation in Java.
